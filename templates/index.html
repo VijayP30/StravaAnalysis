@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>My Strava Analysis</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/map">Map</a></li>
+                <li><a href="/graphs">Graphs</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Your main content goes here -->
+        <iframe height='454' width='300' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/athletes/50715143/latest-rides/094ea493913ff921639cc90eafce32ad277979ec'></iframe>
+
+        <iframe height='160' width='300' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/athletes/50715143/activity-summary/094ea493913ff921639cc90eafce32ad277979ec'></iframe>
+    </main>
+</body>
+</html>

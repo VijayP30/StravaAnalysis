@@ -1,0 +1,48 @@
+/* Reset some default browser styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a matte black background color to the entire page */
+body {
+    background-color: #111; /* Matte black */
+    color: #fff; /* Text color */
+    font-family: Arial, sans-serif;
+}
+
+/* Style the navigation bar */
+header {
+    background-color: #000; /* Deep solid black */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    display: flex; /* Use flexbox to arrange links horizontally */
+    justify-content: space-between; /* Distribute links evenly */
+}
+
+/* Style the navigation links */
+nav li {
+    flex-grow: 1; /* Distribute available space evenly */
+    text-align: center; /* Center the text within each link */
+    position: relative; /* Position for hover effect */
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px; /* Adjust the font size as needed */
+    display: block;
+    padding: 10px 0; /* Add padding for spacing */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+/* Change the link background color to orange and text color to black on hover */
+nav li:hover a {
+    background-color: #FC5200;
+    color: #000;
+}

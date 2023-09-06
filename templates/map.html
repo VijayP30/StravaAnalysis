@@ -1,0 +1,43 @@
+<!-- map.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GPS Routes Map</title>
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+    <!-- Custom CSS for styling -->
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            margin-top: 20px;
+            color: #fc4c02;
+        }
+        #map {
+            height: 600px;
+        }
+    </style>
+
+    <!-- Include Folium CSS and JS -->
+    <!-- {{ map_data|safe }} -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/map">Map</a></li>
+                <li><a href="/graphs">Graphs</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {{ map_data|safe }}
+    </main>
+</body>
+</html>
