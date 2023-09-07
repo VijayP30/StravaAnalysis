@@ -47,10 +47,9 @@ def get_data(url, access_token, numb_items, page):
 
 def main():
     access_token = get_access_token()
-    # header = {'Authorization': 'Bearer ' + access_token}
-    # param = {'per_page': 200, 'page': 1}
-    # data = requests.get(activites_url, headers=header, params=param).json()
-    # print(data)
+    header = {'Authorization': 'Bearer ' + access_token}
+    param = {'per_page': 200, 'page': 1}
+    data = requests.get(activites_url, headers=header, params=param).json()
     page = 1
     print("Retrieving Strava Data\n")
     while True:

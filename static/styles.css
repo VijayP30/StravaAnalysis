@@ -1,19 +1,16 @@
-/* Reset some default browser styles */
 body, ul {
     margin: 0;
     padding: 0;
 }
 
-/* Apply a matte black background color to the entire page */
 body {
-    background-color: #111; /* Matte black */
-    color: #fff; /* Text color */
+    background-color: #111;
+    color: #fff;
     font-family: Arial, sans-serif;
 }
 
-/* Style the navigation bar */
 header {
-    background-color: #000; /* Deep solid black */
+    background-color: #000;
     padding: 10px 0;
 }
 
@@ -21,27 +18,25 @@ nav ul {
     list-style: none;
     text-align: center;
     padding: 0;
-    display: flex; /* Use flexbox to arrange links horizontally */
-    justify-content: space-between; /* Distribute links evenly */
+    display: flex;
+    justify-content: space-between;
 }
 
-/* Style the navigation links */
 nav li {
-    flex-grow: 1; /* Distribute available space evenly */
-    text-align: center; /* Center the text within each link */
-    position: relative; /* Position for hover effect */
+    flex-grow: 1;
+    text-align: center;
+    position: relative;
 }
 
 nav a {
     text-decoration: none;
     color: #fff;
-    font-size: 18px; /* Adjust the font size as needed */
+    font-size: 18px; 
     display: block;
-    padding: 10px 0; /* Add padding for spacing */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+    padding: 10px 0; 
+    transition: background-color 0.3s, color 0.3s; 
 }
 
-/* Change the link background color to orange and text color to black on hover */
 nav li:hover a {
     background-color: #FC5200;
     color: #000;
