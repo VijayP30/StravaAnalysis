@@ -1,5 +1,3 @@
-import subprocess
-import calendar
 from geopy.geocoders import Nominatim
 import pandas as pd
 import numpy as np

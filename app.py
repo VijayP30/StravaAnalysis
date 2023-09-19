@@ -5,7 +5,6 @@ import folium
 from folium.plugins import HeatMap
 import pandas as pd
 import polyline
-from flask import Flask, render_template
 
 app = Flask(__name__)
 
